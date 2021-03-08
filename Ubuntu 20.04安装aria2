@@ -1,13 +1,13 @@
-1)	安装
+1)安装
 apt -y install aria2
 mkdir /etc/aria2
 touch /etc/aria2/aria2.session
 wget -P /etc/aria2 https://github.com/ToyoDAdoubi/doubi/blob/master/other/Aria2/dht.dat
-2)	配置
+2)配置
 vim /etc/aria2/aria2.conf
-3)	新建aria2c服务
+3)新建aria2c服务
 vim /etc/systemd/system/aria2c.service
-4)	启动、开机自启命令
+4)启动、开机自启命令
 systemctl enable aria2c.service
 systemctl start aria2c.service
 
